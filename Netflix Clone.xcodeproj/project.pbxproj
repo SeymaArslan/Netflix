@@ -16,6 +16,7 @@
 		121651BD2A82211800722488 /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121651BC2A82211800722488 /* UpcomingViewController.swift */; };
 		121651BF2A82217000722488 /* SearchsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121651BE2A82217000722488 /* SearchsViewController.swift */; };
 		121651C12A8221A900722488 /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121651C02A8221A900722488 /* DownloadsViewController.swift */; };
+		121651C82A8254BC00722488 /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121651C72A8254BC00722488 /* CollectionViewTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		121651BC2A82211800722488 /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
 		121651BE2A82217000722488 /* SearchsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchsViewController.swift; sourceTree = "<group>"; };
 		121651C02A8221A900722488 /* DownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
+		121651C72A8254BC00722488 /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,11 @@
 		121651A42A821DA900722488 /* Netflix Clone */ = {
 			isa = PBXGroup;
 			children = (
+				121651C62A82547600722488 /* Managers */,
+				121651C52A82546500722488 /* Resources */,
+				121651C42A82542E00722488 /* Models */,
+				121651C22A82540100722488 /* Views */,
+				121651C32A82541600722488 /* ViewModels */,
 				121651B92A8220A700722488 /* Controllers */,
 				121651A52A821DA900722488 /* AppDelegate.swift */,
 				121651A72A821DA900722488 /* SceneDelegate.swift */,
@@ -82,6 +89,42 @@
 				121651C02A8221A900722488 /* DownloadsViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		121651C22A82540100722488 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				121651C72A8254BC00722488 /* CollectionViewTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		121651C32A82541600722488 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		121651C42A82542E00722488 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		121651C52A82546500722488 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		121651C62A82547600722488 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +199,7 @@
 			files = (
 				121651AA2A821DA900722488 /* MainTabBarViewController.swift in Sources */,
 				121651A62A821DA900722488 /* AppDelegate.swift in Sources */,
+				121651C82A8254BC00722488 /* CollectionViewTableViewCell.swift in Sources */,
 				121651C12A8221A900722488 /* DownloadsViewController.swift in Sources */,
 				121651BF2A82217000722488 /* SearchsViewController.swift in Sources */,
 				121651A82A821DA900722488 /* SceneDelegate.swift in Sources */,
