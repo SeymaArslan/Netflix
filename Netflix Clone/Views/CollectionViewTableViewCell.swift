@@ -11,7 +11,7 @@ class CollectionViewTableViewCell: UITableViewCell {
     
     static let identifier = "CollectionViewTableCell"
     
-    private let collectionView: UICollectionView = {
+    private let collectionView: UICollectionView = { // functionality enabled by default
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: 140, height: 200)  // want to see for line
         layout.scrollDirection = .horizontal
