@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DownloadsViewController.swift
 //  Netflix Clone
 //
 //  Created by Seyma on 8.08.2023.
@@ -7,13 +7,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class DownloadsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        view.backgroundColor = .systemBackground
+        
+    
     }
 
 
 }
-
