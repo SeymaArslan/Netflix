@@ -3,7 +3,7 @@
 //  Netflix Clone
 //
 //  Created by Seyma on 8.08.2023.
-//
+// 
 
 import UIKit
 
