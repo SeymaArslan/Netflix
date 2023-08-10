@@ -20,6 +20,8 @@
 		121651CA2A82B4B500722488 /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121651C92A82B4B500722488 /* HeroHeaderUIView.swift */; };
 		121651CC2A83B4D700722488 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121651CB2A83B4D700722488 /* APICaller.swift */; };
 		121651CE2A83C08800722488 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121651CD2A83C08800722488 /* Movie.swift */; };
+		125D2BCC2A85084E003415B1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125D2BCB2A85084E003415B1 /* Extensions.swift */; };
+		125D2BCE2A851CF4003415B1 /* Tv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125D2BCD2A851CF4003415B1 /* Tv.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		121651C92A82B4B500722488 /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
 		121651CB2A83B4D700722488 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		121651CD2A83C08800722488 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		125D2BCB2A85084E003415B1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		125D2BCD2A851CF4003415B1 /* Tv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tv.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				121651CD2A83C08800722488 /* Movie.swift */,
+				125D2BCD2A851CF4003415B1 /* Tv.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 		121651C52A82546500722488 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				125D2BCB2A85084E003415B1 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -213,9 +219,11 @@
 				121651CA2A82B4B500722488 /* HeroHeaderUIView.swift in Sources */,
 				121651C12A8221A900722488 /* DownloadsViewController.swift in Sources */,
 				121651BF2A82217000722488 /* SearchsViewController.swift in Sources */,
+				125D2BCC2A85084E003415B1 /* Extensions.swift in Sources */,
 				121651A82A821DA900722488 /* SceneDelegate.swift in Sources */,
 				121651BD2A82211800722488 /* UpcomingViewController.swift in Sources */,
 				121651CE2A83C08800722488 /* Movie.swift in Sources */,
+				125D2BCE2A851CF4003415B1 /* Tv.swift in Sources */,
 				121651BB2A8220D400722488 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
