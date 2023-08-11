@@ -3,7 +3,7 @@
 //  Netflix Clone
 //
 //  Created by Seyma on 10.08.2023.
-//  https://github.com/SDWebImage/SDWebImage
+//  https://github.com/SDWebImage/SDWebImage   
 
 import UIKit
 import SDWebImage
