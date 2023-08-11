@@ -17,10 +17,16 @@ class SearchsViewController: UIViewController {
         return table
     }()
     
+    private let searchController: UISearchController = {
+       let controller = UISearchController(searchResultsController: SearchResultsViewController())
+        controller.searchBar.placeholder = "Film veya Dizilerde Arayın"
+        controller.searchBar.searchBarStyle = .minimal
+        return controller
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Arama"
+        title = "Popüler Aramalar"
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationItem.largeTitleDisplayMode = .always
         
@@ -29,6 +35,9 @@ class SearchsViewController: UIViewController {
         view.addSubview(discoverTable)
         discoverTable.delegate = self
         discoverTable.dataSource = self
+        
+        navigationItem.searchController = searchController
+        navigationController?.navigationBar.tintColor = .white
         
         fetchDiscoverMovies()
     }
