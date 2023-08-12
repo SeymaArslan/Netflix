@@ -14,7 +14,7 @@
 		121651B22A821DAB00722488 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 121651B02A821DAB00722488 /* LaunchScreen.storyboard */; };
 		121651BB2A8220D400722488 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121651BA2A8220D400722488 /* HomeViewController.swift */; };
 		121651BD2A82211800722488 /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121651BC2A82211800722488 /* UpcomingViewController.swift */; };
-		121651BF2A82217000722488 /* SearchsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121651BE2A82217000722488 /* SearchsViewController.swift */; };
+		121651BF2A82217000722488 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121651BE2A82217000722488 /* SearchViewController.swift */; };
 		121651C12A8221A900722488 /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121651C02A8221A900722488 /* DownloadsViewController.swift */; };
 		121651C82A8254BC00722488 /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121651C72A8254BC00722488 /* CollectionViewTableViewCell.swift */; };
 		121651CA2A82B4B500722488 /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121651C92A82B4B500722488 /* HeroHeaderUIView.swift */; };
@@ -39,7 +39,7 @@
 		121651B32A821DAB00722488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		121651BA2A8220D400722488 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		121651BC2A82211800722488 /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
-		121651BE2A82217000722488 /* SearchsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchsViewController.swift; sourceTree = "<group>"; };
+		121651BE2A82217000722488 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		121651C02A8221A900722488 /* DownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
 		121651C72A8254BC00722488 /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
 		121651C92A82B4B500722488 /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
@@ -157,7 +157,7 @@
 			children = (
 				121651BA2A8220D400722488 /* HomeViewController.swift */,
 				121651BC2A82211800722488 /* UpcomingViewController.swift */,
-				121651BE2A82217000722488 /* SearchsViewController.swift */,
+				121651BE2A82217000722488 /* SearchViewController.swift */,
 				121651C02A8221A900722488 /* DownloadsViewController.swift */,
 			);
 			path = Core;
@@ -256,7 +256,7 @@
 				121651CC2A83B4D700722488 /* APICaller.swift in Sources */,
 				121651CA2A82B4B500722488 /* HeroHeaderUIView.swift in Sources */,
 				121651C12A8221A900722488 /* DownloadsViewController.swift in Sources */,
-				121651BF2A82217000722488 /* SearchsViewController.swift in Sources */,
+				121651BF2A82217000722488 /* SearchViewController.swift in Sources */,
 				125D2BDD2A866B90003415B1 /* SearchResultsViewController.swift in Sources */,
 				125D2BCC2A85084E003415B1 /* Extensions.swift in Sources */,
 				121651A82A821DA900722488 /* SceneDelegate.swift in Sources */,

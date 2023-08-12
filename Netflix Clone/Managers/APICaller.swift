@@ -3,7 +3,7 @@
 //  Netflix Clone
 //
 //  Created by Seyma on 9.08.2023.
-//  1.40
+//
 
 import Foundation
 
@@ -112,6 +112,30 @@ class APICaller {
             }
         }
         task.resume()
+    }
+    
+    // https://api.themoviedb.org/3/search/movie?query=Jack+Reacher&api_key=ce05ce78716351b7b5383ba469ff6684
+    
+    func search(with query:String, completion: @escaping (Result<[Title], Error>) -> Void) {
+
+        guard let query = query.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) else { return }
+        
+        guard let url = URL(string: "\(Constants.baseURL)/3/search/movie?query=\(query)&api_key=\(Constants.API_KEY)") else {
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, _, error in
+            guard let data = data, error == nil else {return}
+            do{
+                let results = try JSONDecoder().decode(TrendingTitleResponse.self, from: data)
+                completion(.success(results.results))
+            }
+            catch {
+                completion(.failure(APIError.failedTogetData))
+            }
+        }
+        task.resume()
+        
     }
     
 }

@@ -17,7 +17,7 @@ class MainTabBarViewController: UITabBarController {
         // Create pressed tab bar Note: Why UINavCont? Because user clicked button than push view controller in section
         let vc1 = UINavigationController(rootViewController: HomeViewController())
         let vc2 = UINavigationController(rootViewController: UpcomingViewController())
-        let vc3 = UINavigationController(rootViewController: SearchsViewController())
+        let vc3 = UINavigationController(rootViewController: SearchViewController())
         let vc4 = UINavigationController(rootViewController: DownloadsViewController())
         
         vc1.tabBarItem.image = UIImage(systemName: "house")
