@@ -98,7 +98,6 @@
 				121651B92A8220A700722488 /* Controllers */,
 				121651A52A821DA900722488 /* AppDelegate.swift */,
 				121651A72A821DA900722488 /* SceneDelegate.swift */,
-				121651A92A821DA900722488 /* MainTabBarViewController.swift */,
 				121651AE2A821DAB00722488 /* Assets.xcassets */,
 				121651B02A821DAB00722488 /* LaunchScreen.storyboard */,
 				121651B32A821DAB00722488 /* Info.plist */,
@@ -109,8 +108,8 @@
 		121651B92A8220A700722488 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				125D2BDE2A866C07003415B1 /* Core */,
 				125D2BDF2A866C1F003415B1 /* General */,
+				125D2BDE2A866C07003415B1 /* Core */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -166,6 +165,7 @@
 				121651BA2A8220D400722488 /* HomeViewController.swift */,
 				121651BC2A82211800722488 /* UpcomingViewController.swift */,
 				121651BE2A82217000722488 /* SearchViewController.swift */,
+				121651A92A821DA900722488 /* MainTabBarViewController.swift */,
 				121651C02A8221A900722488 /* DownloadsViewController.swift */,
 			);
 			path = Core;
