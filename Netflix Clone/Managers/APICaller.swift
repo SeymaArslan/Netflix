@@ -3,7 +3,7 @@
 //  Netflix Clone
 //
 //  Created by Seyma on 9.08.2023.
-//
+// 
 
 import Foundation
 
@@ -116,8 +116,6 @@ class APICaller {
         task.resume()
     }
     
-    // https://api.themoviedb.org/3/search/movie?query=Jack+Reacher&api_key=ce05ce78716351b7b5383ba469ff6684
-    
     func search(with query:String, completion: @escaping (Result<[Title], Error>) -> Void) {
 
         guard let query = query.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) else { return }
@@ -140,16 +138,18 @@ class APICaller {
         
     }
     
-    func getMovie(with query: String) {
+    func getMovie(with query: String, completion: @escaping (Result<VideoElement, Error>) -> Void) {
         guard let query = query.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) else { return }
         guard let url = URL(string: "\(Constants.youtubeBaseURL)q=\(query)&key=\(Constants.youtubeAPI_KEY)") else { return }
         let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, _, error in
             guard let data = data, error == nil else {return}
             do{
-                let results = try JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed)
-                print(results)
+                let results = try JSONDecoder().decode(YoutubeSearchResponse.self, from: data)
+                
+                completion(.success(results.items[0]))
             }
             catch {
+                completion(.failure(error))
                 print(error.localizedDescription)
             }
         }
