@@ -24,7 +24,7 @@ class DownloadsViewController: UIViewController {
 
         view.backgroundColor = .systemBackground
         
-        title = "Yüklemeler"
+        title = "Listem"
         view.addSubview(downloadedTable)
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationItem.largeTitleDisplayMode = .always

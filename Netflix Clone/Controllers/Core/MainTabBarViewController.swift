@@ -28,7 +28,7 @@ class MainTabBarViewController: UITabBarController {
         vc1.title = "Ana Sayfa"
         vc2.title = "Yakında"
         vc3.title = "Favori Aramalar"
-        vc4.title = "Yüklemeler"
+        vc4.title = "Listem"
         
         tabBar.tintColor = .label // if use dark or normal mode label text color is change
         

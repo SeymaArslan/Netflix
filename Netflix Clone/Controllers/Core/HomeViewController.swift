@@ -60,8 +60,8 @@ class HomeViewController: UIViewController {
     }
     
     private func configureNavbar() {
-        var image = UIImage(named: "sjobs")
-        image = image?.withRenderingMode(.alwaysOriginal)  // fotoyu orjinal haliyle göstermek için
+        var image = UIImage(named: "nlogo")
+        image = image?.withRenderingMode(.alwaysOriginal)  // fotoyu orjinal haliyle göstermek için alwaysOriginal
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: .done, target: self, action: nil)
         
         navigationItem.rightBarButtonItems = [
@@ -70,7 +70,7 @@ class HomeViewController: UIViewController {
             
         ]
         
-        navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.tintColor = .label
     }
     
     override func viewDidLayoutSubviews() {
@@ -169,7 +169,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         }
         header.textLabel?.font = .systemFont(ofSize: 18, weight: .semibold)
         header.textLabel?.frame = CGRect(x: header.bounds.origin.x + 20, y: header.bounds.origin.y, width: 100, height: header.bounds.height)
-        header.textLabel?.textColor = .white
+        header.textLabel?.textColor = .label
         header.textLabel?.text = header.textLabel?.text?.capitalizationFirstLetter()
     }
     
